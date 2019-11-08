@@ -33,7 +33,7 @@ print restaurant_menu
 #6.7
 restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 }
 restaurant_menu.each do |food, price|
-  if food.split(" ").count > 1
+  if food.split(" ").count >= 2
     restaurant_menu[food] = price*0.8
   end
 end
